@@ -491,24 +491,24 @@ In this step, we'll start with the first topic: `EvenAndOdd`.
 <b>The component outline:</b> One parent `div` element, one `h4` element, one `input` element, one `button` element, and two `span` elements. 
 
 * Open `src/components/Topics/EvenAndOdd.js`.
-* Remove the `<p>` element from the `return` of the `render` method.
-* Add the component outline to the `return` of the `render` method.
-* Add the following `className` props to the outline:
-  * `div` - className="puzzleBox evenAndOddPB"
-  * `input` - className="inputLine"
-  * `button` - className="confirmationButton"
-  * Both `span`s - className="resultsBox"
-* Assign the `h4` element the value of `"Evens and Odds"`.
-* Create a `constructor` method that creates an initial state:
-  * `evenArray` - This should default to an empty array.
-  * `oddArray` - This should default to an empty array.
-  * `userInput` - This should default to an empty string.
-* Create an `onChange` prop for the `input` element that updates the value of `userInput` on state.
-* Create an `onClick` prop for the `button` element that calls a method on the class:
-  * This method should solve the toy problem.
-  * This method should update the value of `evenArray` and `oddArray` on state.
-* Assign one `span` element to display the value of `evenArray`.
-* Assign the other `span` element to display the value of `oddArray`.
+<!-- * Remove the `<p>` element from the `return` of the `render` method. -->
+<!-- * Add the component outline to the `return` of the `render` method. -->
+<!-- * Add the following `className` props to the outline: -->
+  <!-- * `div` - className="puzzleBox evenAndOddPB" -->
+  <!-- * `input` - className="inputLine" -->
+  <!-- * `button` - className="confirmationButton" -->
+  <!-- * Both `span`s - className="resultsBox" -->
+<!-- * Assign the `h4` element the value of `"Evens and Odds"`. -->
+<!-- * Create a `constructor` method that creates an initial state: -->
+  <!-- * `evenArray` - This should default to an empty array. -->
+  <!-- * `oddArray` - This should default to an empty array. -->
+  <!-- * `userInput` - This should default to an empty string. -->
+<!-- * Create an `onChange` prop for the `input` element that updates the value of `userInput` on state. -->
+<!-- * Create an `onClick` prop for the `button` element that calls a method on the class: -->
+  <!-- * This method should solve the toy problem. -->
+  <!-- * This method should update the value of `evenArray` and `oddArray` on state. -->
+<!-- * Assign one `span` element to display the value of `evenArray`. -->
+<!-- * Assign the other `span` element to display the value of `oddArray`. -->
 
 <details>
 
@@ -544,7 +544,7 @@ constructor() {
 }
 ```
 
-Next, let's update our last two `span` elements to display our `evenArray` and `oddArray`.
+<!-- Next, let's update our last two `span` elements to display our `evenArray` and `oddArray`. -->
 
 ```js
 render() {
@@ -659,7 +659,7 @@ export default class EvenAndOdd extends Component {
     return (
       <div className="puzzleBox evenAndOddPB">
         <h4> Evens and Odds </h4>
-        <input className="inputLine" onChange={ (e) => this.handleChange(e.target.value) }></input>
+        <input className="inputLine" onChange={ (e) => this.handleChange(e.target.value) } value={}></input>
         <button className="confirmationButton" onClick={ () => { this.assignEvenAndOdds(this.state.userInput) }}> Split </button>
         <span className="resultsBox"> Evens: { JSON.stringify(this.state.evenArray) } </span>
         <span className="resultsBox"> Odds: { JSON.stringify(this.state.oddArray) } </span>
@@ -1265,7 +1265,7 @@ export default class Palindrome extends Component {
 
 In this step, we'll build out the `Sum` component.
 
-### Instructions
+<!-- ### Instructions
 
 <b>The problem summary:</b> Given two numbers, calculate the sum and display it.
 
@@ -1289,7 +1289,7 @@ In this step, we'll build out the `Sum` component.
 * Create an `onClick` prop for the button element that calls a method on the class:
   * This method should solve the toy problem.
   * This method should update the value of `sum`.
-* Assign the `span` element the value of `sum`.
+* Assign the `span` element the value of `sum`. -->
 
 <details>
 
